@@ -3,9 +3,9 @@ import { Geist_Mono, Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
+import { Metadata } from "next";
 import "./globals.css";
 import { Providers } from './providers';
-import { Metadata } from "next";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'})
 
@@ -19,28 +19,28 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://imperialmedia.na'), 
   
   title: {
-    default: 'My Awesome App', // Fallback title for pages without a title
-    template: '%s | My Awesome App', // The template suffix/prefix for child pages
+    default: 'Imperial Media Solutions', // Fallback title for pages without a title
+    template: '%s | Imperial Media', // The template suffix/prefix for child pages
   },
   description: 'A comprehensive, high-performance web application template.',
-  keywords: ['Next.js', 'React', 'SEO Template'],
-  authors: [{ name: 'Your Name', url: 'https://yourdomain.com' }],
-  creator: 'Your Company Name',
+  keywords: ['Imperial Media Solutions', 'Design Agency', ''],
+  authors: [{ name: 'Thindhimba George', url: 'https://imperialmedia.na' }],
+  creator: 'Imperial Media Solutions',
   
   // Open Graph (Social Previews for Facebook/LinkedIn)
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://yourdomain.com',
-    siteName: 'My Awesome App',
-    title: 'My Awesome App',
+    url: 'https://imperialmedia.na',
+    siteName: 'Imperial Media Solutions',
+    title: 'Imperial Media Solutions',
     description: 'A comprehensive, high-performance web application template.',
     images: [
       {
-        url: '/og-image.png', // Resolves to https://yourdomain.com
+        url: '/og-image.png', // Resolves to https://imperialmedia.na
         width: 1200,
         height: 630,
-        alt: 'My Awesome App Preview Image',
+        alt: 'Imperial Media Solutions Preview Image',
       },
     ],
   },
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
   // Twitter Cards
   twitter: {
     card: 'summary_large_image',
-    title: 'My Awesome App',
+    title: 'Imperial Media Solutions',
     description: 'A comprehensive, high-performance web application template.',
-    creator: '@yourtwitterhandle',
+    creator: '@thee_great_kenn',
     images: ['/og-image.png'], 
   },
 
