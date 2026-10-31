@@ -89,7 +89,9 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <Providers>
-            <TooltipProvider>{children}</TooltipProvider>
+            <TooltipProvider>
+              {children}
+            </TooltipProvider>
           </Providers>
         </ThemeProvider>
       </body>
