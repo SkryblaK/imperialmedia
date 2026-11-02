@@ -19,7 +19,7 @@ export default function ResumePage() {
         <div className="flex w-full items-cente justify-between max-w-6xl mx-auto px-2">
           <div className="flex flex-col justify-start">
             <h1 className="lg:hidden text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-semibold text-white font-stretch-expanded">Thindhimba George</h1>
-            <h1 className="hidden lg:block text-xl md:text-2xl lg:text-3xl xl:text-5xl font-semibold text-white font-stretch-expanded">Thindhimba "SkryblaK" George</h1>
+            <h1 className="hidden lg:block text-xl md:text-2xl lg:text-3xl xl:text-5xl font-semibold text-white font-stretch-expanded">Thindhimba &rdquo;SkryblaK&ldquo; George</h1>
             {/* Job Titles */}
             <h3 className="text-black font-mono sm:hidden">Electrical Engineer</h3>
             <h3 className="hidden sm:block text-black font-mono md:hidden">Electrical Engineer | CEO, Founder</h3>

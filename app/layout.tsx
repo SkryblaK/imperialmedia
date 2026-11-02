@@ -3,6 +3,7 @@ import { Geist_Mono, Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/next";
 import { Metadata } from "next";
 import "./globals.css";
 import { Providers } from './providers';
@@ -89,6 +90,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <Providers>
+            <Analytics />
             <TooltipProvider>
               {children}
             </TooltipProvider>
