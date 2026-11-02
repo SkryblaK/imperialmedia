@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { GitBranch, Heart, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export const metadata: Metadata = {
   title: 'Resumè', // Display Title
@@ -16,7 +18,8 @@ export default function ResumePage() {
         {/* Intro + Image */}
         <div className="flex w-full items-cente justify-between max-w-6xl mx-auto px-2">
           <div className="flex flex-col justify-start">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-semibold text-white font-stretch-expanded">Thindhimba George</h1>
+            <h1 className="lg:hidden text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-semibold text-white font-stretch-expanded">Thindhimba George</h1>
+            <h1 className="hidden lg:block text-xl md:text-2xl lg:text-3xl xl:text-5xl font-semibold text-white font-stretch-expanded">Thindhimba "SkryblaK" George</h1>
             {/* Job Titles */}
             <h3 className="text-black font-mono sm:hidden">Electrical Engineer</h3>
             <h3 className="hidden sm:block text-black font-mono md:hidden">Electrical Engineer | CEO, Founder</h3>
@@ -30,23 +33,33 @@ export default function ResumePage() {
 
             {/* Hidden Socials - Only for Large Screens */}
             <div className="hidden sm:flex justify-between items-center mt-4 w-full pr-4">
-              <Link href=''>
-                <Button size={'lg'} className={'bg-secondary text-gray-900 hover:ring hover:text-white dark:text-white'}><GitBranch />View GitHub Profile</Button>
+              <Link href='https://github.com/SkryblaK/imperialmedia' rel="noopener noreferrer" target="_blank">
+                {/* <Button size={'lg'} className={'bg-secondary text-gray-900 hover:ring hover:text-white dark:text-white'}><GitBranch />View GitHub Profile</Button> */}
+                <Button size={'lg'} className={'bg-secondary text-gray-900 hover:ring hover:text-white dark:text-white'}><FaGithub />View GitHub Profile</Button>
               </Link>
               <span className="flex items-center gap-4 px-4">
-                <Link href=''>
+                <Link href='https://www.linkedin.com/in/george-thindhimba/' rel="noopener noreferrer" target="_blank">
                   <Button size={'icon-lg'} className={'bg-secondary text-gray-800 fill-gray-800 hover:text-white hover:ring hover:fill-white dark:text-white dark:hover:fill-white'}>
-                    <Heart fill="" />
+                    {/* <Heart fill="" /> */}
+                    <FaLinkedin fill="" />
                   </Button>
                 </Link>
-                <Link href=''>
+                <Link href='https://www.instagram.com/savvy_._sagitarrian' rel="noopener noreferrer" target="_blank">
                   <Button size={'icon-lg'} className={'bg-secondary text-gray-800 fill-gray-800 hover:text-white hover:ring hover:fill-white dark:text-white dark:hover:fill-white'}>
-                    <Heart fill="" />
+                    {/* <Heart fill="" /> */}
+                    <FaInstagram fill="" />
                   </Button>
                 </Link>
-                <Link href=''>
+                <Link href='https://x.com/thee_great_kenn' rel="noopener noreferrer" target="_blank">
                   <Button size={'icon-lg'} className={'bg-secondary text-gray-800 fill-gray-800 hover:text-white hover:ring hover:fill-white dark:text-white dark:hover:fill-white'}>
-                    <Heart fill="" />
+                    {/* <Heart fill="" /> */}
+                    <FaXTwitter fill="" />
+                  </Button>
+                </Link>
+                <Link href='https://wa.me/qr/JQKDQITZGBXMP1' rel="noopener noreferrer" target="_blank">
+                  <Button size={'icon-lg'} className={'bg-secondary text-gray-800 fill-gray-800 hover:text-white hover:ring hover:fill-white dark:text-white dark:hover:fill-white'}>
+                    {/* <Heart fill="" /> */}
+                    <FaWhatsapp fill="" />
                   </Button>
                 </Link>
               </span>

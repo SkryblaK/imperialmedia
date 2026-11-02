@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { BiCamera } from 'react-icons/bi';
 import { BsYoutube } from 'react-icons/bs';
 import { DiHtml5, DiPhotoshop } from 'react-icons/di';
-import { FaCamera, FaChurch, FaDrawPolygon, FaMap, FaPython, FaSchool, FaVideo } from 'react-icons/fa';
-import { FaLocationDot } from 'react-icons/fa6';
+import { FaCamera, FaChurch, FaDrawPolygon, FaGithub, FaInstagram, FaLinkedin, FaMap, FaPython, FaSchool, FaVideo } from 'react-icons/fa';
+import { FaLocationDot, FaXTwitter } from 'react-icons/fa6';
 import { GiTeacher } from 'react-icons/gi';
 import { MdWork } from "react-icons/md";
 import { PiNavigationArrowFill } from 'react-icons/pi';
@@ -47,27 +47,27 @@ export const NavLinks = [
 export const SocialLinks = [
     {
         name: 'GitHub',
-        href: 'https://github.com/SkryblaK/imperialmedia',
+        href: 'https://github.com/SkryblaK/imperialmedia/',
         username: '@SkryblaK',
-        icon: <ScooterIcon />,
+        icon: <FaGithub />,
     },
     {
         name: 'LinkedIn',
-        href: '',
+        href: 'https://www.linkedin.com/in/george-thindhimba/',
         username: 'Thindhimba George',
-        icon: <ScooterIcon />,
+        icon: <FaLinkedin />,
     },
     {
         name: 'Instagram',
-        href: '',
-        username: '',
-        icon: <ScooterIcon />,
+        href: 'https://www.instagram.com/savvy_._sagitarrian',
+        username: '@savvy_._sagitarrian',
+        icon: <FaInstagram />,
     },
     {
         name: 'Twitter',
-        href: '',
-        username: '',
-        icon: <ScooterIcon />,
+        href: 'https://x.com/thee_great_kenn',
+        username: '@thee_great_kenn',
+        icon: <FaXTwitter />,
     },
     {
         name: 'Discord',
@@ -77,7 +77,7 @@ export const SocialLinks = [
     },
     {
         name: 'WhatsApp',
-        href: '',
+        href: 'https://wa.me/qr/JQKDQITZGBXMP1',
         username: 'George_MTK',
         icon: <ScooterIcon />,
     },
