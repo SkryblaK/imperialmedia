@@ -27,7 +27,7 @@ const DEFAULT_LINKS: NavItem[] = [
 ];
 
 /** Radius (px) of the flared top corners. Must match rounded-b-[20px] below. */
-const R = 20;
+const R = 20; // ! xcv
 
 /**
  * The flared "ears" that make the bar look like it grows out of the top edge.
@@ -134,7 +134,7 @@ export function SiteNav({
   siteName = "Imperial Media Solutions",
   logoSrc = "/logos/logo-dark.png",
   links = DEFAULT_LINKS,
-  loginHref = "/login",
+  loginHref = "/dashboard", //! Change back to "/login"
 }: SiteNavProps) {
   const pathname = usePathname();
   const [open, setOpen] = React.useState(true);

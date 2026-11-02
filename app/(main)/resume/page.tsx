@@ -12,7 +12,7 @@ export default function ResumePage() {
   return (
     <div className="flex flex-col min-h-screen bg-primary pt-[55]">
       {/* Top - Introduction Section */}
-      <section id="introduction" className="py-6 border- border-white shadow-md shadow-white">
+      <section id="introduction" className="py-6 border- border-white shadow-md shadow-white select-none">
         {/* Intro + Image */}
         <div className="flex w-full items-cente justify-between max-w-6xl mx-auto px-2">
           <div className="flex flex-col justify-start">
