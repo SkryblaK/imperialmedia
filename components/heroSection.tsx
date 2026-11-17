@@ -1,5 +1,6 @@
 import { Dot } from "lucide-react"
 import Link from "next/link"
+import LandingAttraction from "./landingAttraction"
 import { Button } from "./ui/button"
 
 const marqueeText =
@@ -11,7 +12,7 @@ export default function HeroSection() {
       <div className="flex h-[calc(100vh-40px)] w-full">
         {/* Left */}
         <div className="flex w-full flex-col md:w-2/3 lg:w-1/2">
-          <span className="mx-auto my-auto flex h-full w-full flex-col items-center justify-center gap-4 rounded-xl border-primary p-1 max-md:border-2 max-md:bg-primary/20 md:h-5/6 md:items-start">
+          <span className="mx-auto my-auto flex h-full w-full flex-col items-center justify-center gap-6 rounded-xl border-primary p-1 max-md:border-2 max-md:bg-primary/20 md:h-5/6 md:items-start">
             <span className="flex w-3/5 items-center justify-between text-xs font-bold text-primary">
               <Link href={""} className="hover:text-red-600 hover:underline">
                 Web
@@ -73,9 +74,7 @@ export default function HeroSection() {
         </div>
         {/* Right */}
         <div className="hidden w-1/3 flex-col md:flex lg:w-1/2">
-          <span className="mx-auto my-auto flex h-5/6 w-5/6 items-center justify-center rounded-xl bg-primary font-bold text-white">
-            <p>IMS</p>
-          </span>
+          <LandingAttraction />
         </div>
       </div>
       <div className="mt-3 flex h-10 w-full items-center overflow-hidden rounded-md border border-x-4 border-primary bg-primary whitespace-nowrap text-white">
